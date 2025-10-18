@@ -36,20 +36,70 @@ This project is incommplete needs refactor, these are the following left to comp
 
 ## Project Stucture
 
-philford_attendance_api
-        ⬇
-       app ➡️ config ➡️ database ➡️ enums ➡️ main ➡️ README
-        ⬇
-ATTENDANCE | auth       | migrations  | STUDENT | TEACHER | USER 
-    ⬇          ⬇             ⬇           ⬇          ⬇       ⬇
-models     |            |             |models   |models   |models
-schemas    |schemas     |             |scehmas  |schemas  |schemas
-crud       |crud        |             |crud     |crud     |crud
-routes     |routes      |             |routes   |routes   |routes
-           |dependencies|
-           |hashing
-           |token
-
+C:.
+│   config.py
+│   database.py
+│   enums.py
+│   main.py
+│   README.md
+│
+├───ATTENDANCE
+│       attedance_routes.py
+│       attendance_crud.py
+│       attendance_models.py
+│       attendance_schemas.py
+│       __init__.py
+│
+├───auth
+│       auth_crud.py
+│       auth_routes.py
+│       auth_schemas.py
+│       dependencies.py
+│       hashing.py
+│       token.py
+│       __init__.py
+│
+├───migrations
+│       __init__.py
+│
+├───STUDENT
+│       student_crud.py
+│       student_models.py
+│       student_routes.py
+│       student_schemas.py
+│       __init__.py
+│
+├───TEACHER
+│       id_card_uploads.py
+│       teachers_crud.py
+│       teachers_models.py
+│       teachers_routes.py
+│       teachers_schemas.py
+│       __init__.py
+│
+├───test
+│   │   test_auth.py
+│   │   test_user.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           test_auth.cpython-313-pytest-8.4.1.pyc
+│           test_user.cpython-313-pytest-8.4.1.pyc
+│           __init__.cpython-313.pyc
+│
+├───USER
+│       profile_picture.py
+│       user_crud.py
+│       user_models.py
+│       user_routes.py
+│       user_schemas.py
+│       __init__.py
+│
+└───__pycache__
+        config.cpython-313.pyc
+        database.cpython-313.pyc
+        main.cpython-313.pyc
+        __init__.cpython-313.pyc
 
 ## Relationships
 - **USER** is relaated to **Teacher**, **Student**, **ADMINS**
