@@ -21,7 +21,7 @@ A RESTful Attendance API built with **FASTAPI**, **SQLALCHEMY**, **JWT Authentic
 - **FASTAPI**
 - **SQLALCHEMY**
 - **PostgreSQL**
-- **Pass bcrypt**
+- **Passlib bcrypt**
 - **Git & GitHub**
 
 
