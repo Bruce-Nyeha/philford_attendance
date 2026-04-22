@@ -17,7 +17,7 @@ A RESTful Attendance API built with **FASTAPI**, **SQLALCHEMY**, **JWT Authentic
 
 ## Tech Stack
 
-- **Python(Core Language)**
+- **Python3**
 - **FASTAPI**
 - **SQLALCHEMY**
 - **PostgreSQL**
